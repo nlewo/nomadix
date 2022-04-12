@@ -30,6 +30,10 @@
       graphics = false;
     };
 
+    networking.extraHosts = ''
+      127.0.0.1 helloworld.nomad
+    '';
+
     services.consul = {
       enable = true;
       webUi = true;
