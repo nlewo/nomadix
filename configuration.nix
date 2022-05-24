@@ -42,7 +42,9 @@ in
       { from = "host"; host.port = 38200; guest.port = 8200; }
     ];
     virtualisation = {
-      qemu.options = ["-device vhost-vsock-pci,id=vhost-vsock-pci0,guest-cid=3"];
+      # This is currently not used and fails because of missing permission on some setups
+      # Note this can be used to expose the Docker socket
+      # qemu.options = ["-device vhost-vsock-pci,id=vhost-vsock-pci0,guest-cid=3"];
       graphics = false;
     };
 
