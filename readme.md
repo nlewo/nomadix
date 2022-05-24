@@ -21,3 +21,9 @@ ssh  root@127.0.0.1 -p 30022
 [root@nixos:~]# curl -L http://helloworld.nomad:8901
 hello world
 ```
+
+# Using Vault
+
+    export VAULT_ADDR=http://127.0.0.1:38200
+    export VAULT_TOKEN=root
+    vault status
