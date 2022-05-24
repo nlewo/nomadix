@@ -1,8 +1,14 @@
+# Nomadix
+
+## Getting started
+
 To run the VM:
 
 ```
-nix run .#
+nix run github:nlewo/nomadix#
 ```
+
+To login, type `root` and an empty password.
 
 To terminate the VM, hit `C-a c` and type `quit`.
 
@@ -22,7 +28,7 @@ ssh  root@127.0.0.1 -p 30022
 hello world
 ```
 
-# Using Vault
+## Using Vault
 
     export VAULT_ADDR=http://127.0.0.1:38200
     export VAULT_TOKEN=root
